@@ -36,5 +36,7 @@ cv(){
 	v $1
 }
 
+alias d="deactivate"
+
 
 echo "bash_scripts_shared.sh loaded"
