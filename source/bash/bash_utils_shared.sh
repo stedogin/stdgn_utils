@@ -22,7 +22,10 @@ alias gp="git pull"
 alias gs="git push"
 
 g(){
-	gp && ga && gm $1 && gs
+	git pull
+	git add .
+	git commit -m $1
+	git push
 }
 
 # pip
