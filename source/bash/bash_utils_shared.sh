@@ -16,6 +16,15 @@ alias hg="history | grep "
 alias c="clear"
 
 # git
+alias ga="git add ."
+alias gm="git commit -m "
+alias gp="git pull"
+alias gs="git push"
+
+g(){
+	gp && ga && gm $1 && gs
+}
+
 # pip
 
 # venv
