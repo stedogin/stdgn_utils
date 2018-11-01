@@ -28,6 +28,8 @@ g(){
 # pip
 
 # venv
+alias d="deactivate"
+
 v(){
 	source ~/$1_venv/bin/activate
 }
@@ -44,8 +46,6 @@ cv(){
 	python3.7 -m venv "${VENV_PATH}"
 	v $1
 }
-
-alias d="deactivate"
 
 
 echo "bash_scripts_shared.sh loaded"
