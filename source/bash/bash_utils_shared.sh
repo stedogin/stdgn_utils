@@ -17,15 +17,22 @@ alias c="clear"
 
 # git
 alias ga="git add ."
-alias gm="git commit -m "
+alias gc="git commit -m "
 alias gp="git pull"
 alias gs="git push"
 
+gm(){
+	gp
+	ga
+	gc $1
+	gs
+}
+
 g(){
-	git pull
-	git add .
-	git commit -m $1
-	git push
+	gp
+	ga
+	gm "work in progress"
+	gs
 }
 
 # pip
