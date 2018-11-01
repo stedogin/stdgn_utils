@@ -18,4 +18,23 @@ alias c="clear"
 # git
 # pip
 
+# venv
+v(){
+	source ~/$1_venv/bin/activate
+}
+
+cv(){
+	VENV_PATH="${HOME}/$1_venv"
+	if [ -d ${VENV_PATH} ]; then
+		read -p "$VENV_PATH already exists, continue? (y/n) " -n 1 -r
+		echo
+		if [[ $REPLY = "n" ]]; then
+			return
+		fi
+	fi
+	python3.7 -m venv "${VENV_PATH}"
+	v $1
+}
+
+
 echo "bash_scripts_shared.sh loaded"
