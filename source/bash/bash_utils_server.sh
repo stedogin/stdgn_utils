@@ -1,4 +1,4 @@
-source ~/stdgn_utils/source/bash/bash_scripts_shared.sh
+source ~/stdgn_utils/source/bash/bash_utils_shared.sh
 
 # bash profile
 alias vb="vi ~/.bashrc"
