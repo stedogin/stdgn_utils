@@ -21,6 +21,7 @@ alias gc="git commit -m "
 alias gp="git pull"
 alias gs="git push"
 
+
 gm(){
 	gp
 	ga
