@@ -8,5 +8,8 @@ alias cb="cat ~/.bashrc"
 export LOG_FILE_PATH="${HOME}/logs/log.txt"
 alias gl="cat $LOG_FILE_PATH | grep "
 
+# run sudo with env vars
+alias sp37="sudo -HE env PATH=$PATH PYTHONPATH=$PYTHONPATH python3.7 " 
+
 
 echo "bash_scripts_server.sh loaded"
