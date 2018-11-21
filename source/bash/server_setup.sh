@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # install python 3.7.1 and dependencies
 sudo apt-get update
 

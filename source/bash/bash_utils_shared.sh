@@ -1,6 +1,7 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+
 # screen
 alias ns="screen -S "
 alias s="screen -r "
